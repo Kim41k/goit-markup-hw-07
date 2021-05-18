@@ -16,13 +16,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="page-header">
       <!-- Main navigation -->
-      <div class="container">
+      <div class="section__container">
         <nav>
           <!-- A logo is always a link -->
           <a class="link logo" href="./index.html" lang="en"
@@ -45,7 +45,7 @@
         <ul class="site-nav-contacts list">
           <li class="site-nav-contacts__item">
             <a
-              class="link site-nav-contacts__link"
+              class="site-nav-contacts__link link"
               href="mailto:info@devstudio.com"
             >
               <svg class="site-nav-contacts__email-icon" width="16" height="12">
@@ -73,42 +73,44 @@
     <!-- Main container -->
     <main>
       <section class="section">
-        <div class="container">
+        <div class="section__container">
           <h1 class="title page-title visually-hidden">Наши работы</h1>
-          <ul class="list filter">
-            <li class="filter__item">
-              <button class="works-filter" type="button">Все</button>
+          <ul class="list works-filter">
+            <li class="works-filter__item">
+              <button class="works-filter__btn" type="button">Все</button>
             </li>
-            <li class="filter__item">
-              <button class="works-filter" type="button">Веб-сайты</button>
+            <li class="works-filter__item">
+              <button class="works-filter__btn" type="button">Веб-сайты</button>
             </li>
-            <li class="filter__item">
-              <button class="works-filter" type="button">Приложения</button>
+            <li class="works-filter__item">
+              <button class="works-filter__btn" type="button">
+                Приложения
+              </button>
             </li>
-            <li class="filter__item">
-              <button class="works-filter" type="button">Дизайн</button>
+            <li class="works-filter__item">
+              <button class="works-filter__btn" type="button">Дизайн</button>
             </li>
-            <li class="filter__item">
-              <button class="works-filter" type="button">Маркетинг</button>
+            <li class="works-filter__item">
+              <button class="works-filter__btn" type="button">Маркетинг</button>
             </li>
           </ul>
 
           <ul class="list works">
             <li class="works__item">
               <a
-                class="link works__item-link"
+                class="works__item-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="works__item-wrap">
-                  <div class="works__image-thumb">
+                  <div class="works__img-thumb">
                     <img
                       src="./images/portfolio/technocrack.jpg"
                       alt="Веб-сайт Технокряк"
                       width="370"
                     />
-                    <div class="works__image-overlay">
-                      <div class="works__image-text">
+                    <div class="works__img-overlay">
+                      <div class="works__img-text">
                         <p>
                           Технокряк это современная площадка распространения
                           коронавируса. Компании используют эту платформу для
@@ -120,7 +122,7 @@
                   </div>
 
                   <div class="works_item-meta">
-                    <h3 class="title works__title">Технокряк</h3>
+                    <h3 class="works__title title">Технокряк</h3>
                     <p class="works__desc">Веб-сайт</p>
                   </div>
                 </div></a
@@ -128,19 +130,19 @@
             </li>
             <li class="works__item">
               <a
-                class="link works__item-link"
+                class="works__item-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="works__item-wrap">
-                  <div class="works__image-thumb">
+                  <div class="works__img-thumb">
                     <img
                       src="./images/portfolio/neworlean.jpg"
                       alt="Постер New Orlean vs Golden Star"
                       width="370"
                     />
-                    <div class="works__image-overlay">
-                      <div class="works__image-text">
+                    <div class="works__img-overlay">
+                      <div class="works__img-text">
                         <p>
                           Технокряк это современная площадка распространения
                           коронавируса. Компании используют эту платформу для
@@ -152,7 +154,7 @@
                   </div>
 
                   <div class="works_item-meta">
-                    <h3 class="title works__title">
+                    <h3 class="works__title title">
                       Постер <span lang="en">New Orlean vs Golden Star</span>
                     </h3>
                     <p class="works__desc">Дизайн</p>
@@ -162,19 +164,19 @@
             </li>
             <li class="works__item">
               <a
-                class="link works__item-link"
+                class="works__item-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="works__item-wrap">
-                  <div class="works__image-thumb">
+                  <div class="works__img-thumb">
                     <img
                       src="./images/portfolio/seafood.jpg"
                       alt="Ресторан Seafood"
                       width="370"
                     />
-                    <div class="works__image-overlay">
-                      <div class="works__image-text">
+                    <div class="works__img-overlay">
+                      <div class="works__img-text">
                         <p>
                           Технокряк это современная площадка распространения
                           коронавируса. Компании используют эту платформу для
@@ -186,7 +188,7 @@
                   </div>
 
                   <div class="works_item-meta">
-                    <h3 class="title works__title">
+                    <h3 class="works__title title">
                       Ресторан <span lang="en">Seafood</span>
                     </h3>
                     <p class="works__desc">Приложение</p>
@@ -196,19 +198,19 @@
             </li>
             <li class="works__item">
               <a
-                class="link works__item-link"
+                class="works__item-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="works__item-wrap">
-                  <div class="works__image-thumb">
+                  <div class="works__img-thumb">
                     <img
                       src="./images/portfolio/prime.jpg"
                       alt="Проект Prime"
                       width="370"
                     />
-                    <div class="works__image-overlay">
-                      <div class="works__image-text">
+                    <div class="works__img-overlay">
+                      <div class="works__img-text">
                         <p>
                           Технокряк это современная площадка распространения
                           коронавируса. Компании используют эту платформу для
@@ -220,7 +222,7 @@
                   </div>
 
                   <div class="works_item-meta">
-                    <h3 class="title works__title">
+                    <h3 class="works__title title">
                       Проект <span lang="en">Prime</span>
                     </h3>
                     <p class="works__desc">Маркетинг</p>
@@ -230,19 +232,19 @@
             </li>
             <li class="works__item">
               <a
-                class="link works__item-link"
+                class="works__item-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="works__item-wrap">
-                  <div class="works__image-thumb">
+                  <div class="works__img-thumb">
                     <img
                       src="./images/portfolio/boxes.jpg"
                       alt="Проект Boxes"
                       width="370"
                     />
-                    <div class="works__image-overlay">
-                      <div class="works__image-text">
+                    <div class="works__img-overlay">
+                      <div class="works__img-text">
                         <p>
                           Технокряк это современная площадка распространения
                           коронавируса. Компании используют эту платформу для
@@ -254,7 +256,7 @@
                   </div>
 
                   <div class="works_item-meta">
-                    <h3 class="title works__title">
+                    <h3 class="works__title title">
                       Проект <span lang="en">Boxes</span>
                     </h3>
                     <p class="works__desc">Приложение</p>
@@ -264,19 +266,19 @@
             </li>
             <li class="works__item">
               <a
-                class="link works__item-link"
+                class="works__item-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="works__item-wrap">
-                  <div class="works__image-thumb">
+                  <div class="works__img-thumb">
                     <img
                       src="./images/portfolio/inspiration.jpg"
                       alt="Проект Inspiration has no Borders"
                       width="370"
                     />
-                    <div class="works__image-overlay">
-                      <div class="works__image-text">
+                    <div class="works__img-overlay">
+                      <div class="works__img-text">
                         <p>
                           Технокряк это современная площадка распространения
                           коронавируса. Компании используют эту платформу для
@@ -288,7 +290,7 @@
                   </div>
 
                   <div class="works_item-meta">
-                    <h3 class="title works__title" lang="en">
+                    <h3 class="works__title title" lang="en">
                       Inspiration has no Borders
                     </h3>
                     <p class="works__desc">Веб-сайт</p>
@@ -298,19 +300,19 @@
             </li>
             <li class="works__item">
               <a
-                class="link works__item-link"
+                class="works__item-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="works__item-wrap">
-                  <div class="works__image-thumb">
+                  <div class="works__img-thumb">
                     <img
                       src="./images/portfolio/limited-edition.jpg"
                       alt="Издание Limited Edition"
                       width="370"
                     />
-                    <div class="works__image-overlay">
-                      <div class="works__image-text">
+                    <div class="works__img-overlay">
+                      <div class="works__img-text">
                         <p>
                           Технокряк это современная площадка распространения
                           коронавируса. Компании используют эту платформу для
@@ -322,7 +324,7 @@
                   </div>
 
                   <div class="works_item-meta">
-                    <h3 class="title works__title">
+                    <h3 class="works__title title">
                       Издание <span lang="en">Limited Edition</span>
                     </h3>
                     <p class="works__desc">Дизайн</p>
@@ -332,19 +334,19 @@
             </li>
             <li class="works__item">
               <a
-                class="link works__item-link"
+                class="works__item-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="works__item-wrap">
-                  <div class="works__image-thumb">
+                  <div class="works__img-thumb">
                     <img
                       src="./images/portfolio/lab.jpg"
                       alt="Проект LAB"
                       width="370"
                     />
-                    <div class="works__image-overlay">
-                      <div class="works__image-text">
+                    <div class="works__img-overlay">
+                      <div class="works__img-text">
                         <p>
                           Технокряк это современная площадка распространения
                           коронавируса. Компании используют эту платформу для
@@ -356,7 +358,7 @@
                   </div>
 
                   <div class="works_item-meta">
-                    <h3 class="title works__title">
+                    <h3 class="works__title title">
                       Проект <span lang="en">LAB</span>
                     </h3>
                     <p class="works__desc">Маркетинг</p>
@@ -366,19 +368,19 @@
             </li>
             <li class="works__item">
               <a
-                class="link works__item-link"
+                class="works__item-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="works__item-wrap">
-                  <div class="works__image-thumb">
+                  <div class="works__img-thumb">
                     <img
                       src="./images/portfolio/growing-business.jpg"
                       alt="Проект Growing Business"
                       width="370"
                     />
-                    <div class="works__image-overlay">
-                      <div class="works__image-text">
+                    <div class="works__img-overlay">
+                      <div class="works__img-text">
                         <p>
                           Технокряк это современная площадка распространения
                           коронавируса. Компании используют эту платформу для
@@ -390,7 +392,7 @@
                   </div>
 
                   <div class="works_item-meta">
-                    <h3 class="title works__title" lang="en">
+                    <h3 class="works__title title" lang="en">
                       Growing Business
                     </h3>
                     <p class="works__desc">Приложение</p>
@@ -405,9 +407,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer__container">
-        <address class="footer_address">
-          <a class="link logo logo-footer" href="/" lang="en"
+      <div class="section__container footer__container">
+        <address class="footer__address">
+          <a class="link logo logo-footer" href="./index.html" lang="en"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <p class="footer__address-text">г. Киев, пр-т Леси Украинки, 26</p>
@@ -493,9 +495,9 @@
               />
             </div>
 
-            <button class="subscribe__btn" type="submit">
+            <button class="btn btn-sub" type="submit">
               Подписаться
-              <svg class="subscribe-btn-icon" width="24" height="24">
+              <svg class="btn-sub__icon" width="24" height="24">
                 <use href="./images/icons/sprite.svg#icon-send"></use>
               </svg>
             </button>

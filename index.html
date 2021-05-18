@@ -16,13 +16,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
   </head>
   <body>
     <!-- Header -->
     <header class="page-header">
       <!-- Main navigation -->
-      <div class="container">
+      <div class="section__container">
         <nav>
           <!-- A logo is always a link -->
           <a class="link logo" href="./index.html" lang="en"
@@ -75,10 +76,10 @@
       <!-- Hero section -->
       <section class="hero">
         <div class="hero__overlay">
-          <h1 class="title page-title">
+          <h1 class="title hero__title">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button type="button" class="hero__button" data-modal-open>
+          <button type="button" class="btn btn--hero" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -86,11 +87,11 @@
 
       <!-- Advantages section -->
       <section class="section">
-        <div class="container">
+        <div class="section__container">
           <h2 class="title section-title visually-hidden">Наши преимущества</h2>
           <!-- Hide in CSS -->
 
-          <ul class="list advantages-list">
+          <ul class="advantages-list list">
             <li class="advantages-list__item">
               <div class="advantages-list__icon-wrap">
                 <svg width="70" height="70">
@@ -147,47 +148,45 @@
 
       <!-- What we do section-->
       <section class="what-we-do-section">
-        <div class="container">
-          <h2 class="title section-title what-we-do-section__title">
-            Чем мы занимаемся
-          </h2>
+        <div class="section__container">
+          <h2 class="title section-title">Чем мы занимаемся</h2>
 
           <ul class="list what-we-do">
             <li class="what-we-do__item">
-              <div class="what-we-do__image-wrap">
+              <div class="what-we-do__img-wrap">
                 <img
                   src="./images/what-we-do/img1.jpg"
                   alt="Программист, работающий на планшете"
                   width="370"
                 />
-                <div class="what-we-do__image-overlay">
-                  <p class="what-we-do__image-text">Десктопные приложения</p>
+                <div class="what-we-do__img-overlay">
+                  <p class="what-we-do__img-text">Десктопные приложения</p>
                 </div>
               </div>
             </li>
 
             <li class="what-we-do__item">
-              <div class="what-we-do__image-wrap">
+              <div class="what-we-do__img-wrap">
                 <img
                   src="./images/what-we-do/img2.jpg"
                   alt="Лэптоп с примерами работ"
                   width="370"
                 />
-                <div class="what-we-do__image-overlay">
-                  <p class="what-we-do__image-text">Мобильные приложения</p>
+                <div class="what-we-do__img-overlay">
+                  <p class="what-we-do__img-text">Мобильные приложения</p>
                 </div>
               </div>
             </li>
 
             <li class="what-we-do__item">
-              <div class="what-we-do__image-wrap">
+              <div class="what-we-do__img-wrap">
                 <img
                   src="./images/what-we-do/img3.jpg"
                   alt="Планшет с цветовой палитрой"
                   width="370"
                 />
-                <div class="what-we-do__image-overlay">
-                  <p class="what-we-do__image-text">Дизайнерские решения</p>
+                <div class="what-we-do__img-overlay">
+                  <p class="what-we-do__img-text">Дизайнерские решения</p>
                 </div>
               </div>
             </li>
@@ -197,8 +196,8 @@
 
       <!-- Our team section -->
       <section class="section team-section">
-        <div class="container">
-          <h2 class="title section-title team-section__title">Наша команда</h2>
+        <div class="section__container">
+          <h2 class="title section-title">Наша команда</h2>
 
           <ul class="list team-list">
             <li class="team-list__item">
@@ -473,11 +472,9 @@
       </section>
 
       <!-- Our clients -->
-      <section class="section clients-section">
-        <div class="container">
-          <h2 class="title section-title clients-section__title">
-            Постоянные клиенты
-          </h2>
+      <section class="section">
+        <div class="section__container">
+          <h2 class="title section-title">Постоянные клиенты</h2>
           <ul class="list clients-list">
             <li class="clients-list__item">
               <a
@@ -559,9 +556,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer__container">
-        <address class="footer_address">
-          <a class="link logo logo-footer" href="/" lang="en"
+      <div class="section__container footer__container">
+        <address class="footer__address">
+          <a class="link logo logo-footer" href="./index.html" lang="en"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <p class="footer__address-text">г. Киев, пр-т Леси Украинки, 26</p>
@@ -647,9 +644,9 @@
               />
             </div>
 
-            <button class="subscribe__btn" type="submit">
+            <button class="btn btn-sub" type="submit">
               Подписаться
-              <svg class="subscribe-btn-icon" width="24" height="24">
+              <svg class="btn-sub__icon" width="24" height="24">
                 <use href="./images/icons/sprite.svg#icon-send"></use>
               </svg>
             </button>
@@ -727,24 +724,22 @@
             ></textarea>
           </div>
 
-          <div class="modal-form__policy">
-            <label class="modal-form__policy-label">
+          <div class="modal-form-policy">
+            <label class="modal-form-policy__label">
               <input
                 type="checkbox"
                 name="policy"
-                class="modal-form__policy-checkbox"
+                class="modal-form-policy__checkbox"
               />
-              <span class="modal-form__policy-checkbox-icon"></span>
+              <span class="modal-form-policy__checkbox-icon"></span>
               <span>
                 Соглашаюсь с рассылкой и принимаю
-                <a href="" class="modal-form__policy-link">Условия договора</a>
+                <a href="" class="modal-form-policy__link">Условия договора</a>
               </span>
             </label>
           </div>
 
-          <button class="modal-form__submit-btn" type="submit">
-            Отправить
-          </button>
+          <button class="btn btn--modal-submit" type="submit">Отправить</button>
         </form>
       </div>
     </div>
